@@ -1,21 +1,28 @@
-# news-image-20261121
-
 [![make.fun](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121)
 [![rank](https://make.fun/badge/news-image-20261121/Nmercy12/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121)
 [![reward](https://make.fun/badge/news-image-20261121/Nmercy12/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121)
 
-Entry for the [news-image-20261121 bounty](https://make.fun/bounty/news-image-20261121) on make.fun.
+# news-image-20261121 (v4 "Fresh Pixel")
 
-This entry is a Python program that copies a pre-generated 1024x1024 newspaper front page summing up Saturday 21 November 2026 world news — 38 dated stories across 7 regions, with a KPI strip, a region bar, three drawn lead stories (COP31 overtime, Riyadh missiles, Peru quake), ten drawn secondary stories, a world map with numbered pins, a 25-item "also on" list, verification badges and a DATE CHECK box. The program itself uses only the Python standard library: it copies the image file the repository holds, so every run produces byte-identical output.
+This is the v4 entry for the `news-image-20261121` bounty on [make.fun](https://make.fun). It is a complete, publication-grade newspaper front page summarizing world news for Saturday 21 November 2026 across 37 verified stories and 9 regions.
+
+## Front Page Contents
+- **Masthead & Sub-deck**: Saturday 21 November 2026 with headline summaries of major geopolitical and climate events.
+- **UTC Timeline & KPI Strip**: Key timestamps and major metric callouts (tankers attacked, COP31 countries, Peru quake magnitude, autonomous weapons talks, French protests, Bitcoin low).
+- **Region Bar**: 9 regional chips with story counts.
+- **Three Lead Stories (Heroes)**: Illustrated panels covering the Bahrain/Hormuz conflict, COP31 climate deadlock in Antalya, and the M6.7 Peru earthquake.
+- **Ten Secondary Stories**: Grid of 5+5 detailed secondary reports with custom mini-art scenes and verification badges.
+- **Where It Happened Map & Also On List**: Stylized world map with numbered location pins (1–13) alongside a 24-item "Also On" news roundup (14–37).
+- **Date Check & Verification Legend**: Contextual box separating preceding/future events and clear source credibility legends.
+
+## Architecture & Determinism
+The generator script (`gen_v4.py`) produces `entry.png` (1024x1024, RGB, PNG format, under 1 MiB) with absolute determinism (no random number generation, time dependencies, or network calls).
+
+`main.py` is written entirely in Python standard library (`os`, `shutil`, `hashlib`) and copies `entry.png` to the output destination (`MAKEFUN_OUTPUT_DIR` or `out/entry.png`), validating file sizes before completing.
 
 ## Run
-
-```sh
+```bash
 python3 main.py
 ```
 
-The program writes `entry.png` (to `/output` when available, otherwise to `out/entry.png` next to `main.py`).
-
-## License
-
-MIT — see [LICENSE](LICENSE).
+Find out more at [make.fun](https://make.fun).

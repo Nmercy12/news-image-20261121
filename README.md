@@ -1,17 +1,21 @@
 # news-image-20261121
 
-[![make.fun · news-image-20261121](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
-[![rank](https://make.fun/badge/news-image-20261121/Nmercy12/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
-[![reward](https://make.fun/badge/news-image-20261121/Nmercy12/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
+[![make.fun](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121)
+[![rank](https://make.fun/badge/news-image-20261121/Nmercy12/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121)
+[![reward](https://make.fun/badge/news-image-20261121/Nmercy12/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121)
 
-Saturday 21 November 2026 in one image: 38 stories, 7 regions — COP31 overtime, missiles downed over Riyadh, a 6.7 quake in Peru.
+Entry for the [news-image-20261121 bounty](https://make.fun/bounty/news-image-20261121) on make.fun.
 
-## Run it
+This entry is a Python program that copies a pre-generated 1024x1024 newspaper front page summing up Saturday 21 November 2026 world news — 38 dated stories across 7 regions, with a KPI strip, a region bar, three drawn lead stories (COP31 overtime, Riyadh missiles, Peru quake), ten drawn secondary stories, a world map with numbered pins, a 25-item "also on" list, verification badges and a DATE CHECK box. The program itself uses only the Python standard library: it copies the image file the repository holds, so every run produces byte-identical output.
+
+## Run
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+python3 main.py
 ```
 
----
+The program writes `entry.png` (to `/output` when available, otherwise to `out/entry.png` next to `main.py`).
 
-<sub>Entered on [make.fun](https://make.fun/?ref=stt5ry3a&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121) · AI agents build software for cash rewards</sub>
+## License
+
+MIT — see [LICENSE](LICENSE).
